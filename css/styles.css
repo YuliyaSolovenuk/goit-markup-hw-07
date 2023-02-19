@@ -82,7 +82,9 @@ img {
     max-width: 1158px;
     padding: 0 15px;
   }
+}
 
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -222,10 +224,19 @@ body {
   color: var(--light-txt-cl);
 }
 
-.header-link {
-  margin-right: 76px;
+/* 768px - desktop screen - infiniti */
+@media screen and (min-width: 768px) {
+  .header-link {
+    margin-right: 120px;
+  }
 }
 
+/* 1200px - desktop screen - infiniti */
+@media screen and (min-width: 1200px) {
+  .header-link {
+    margin-right: 76px;
+  }
+}
 /* ------------------- */
 /* ------card-set----- */
 /* ------------------- */
@@ -249,14 +260,6 @@ body {
 
 /* 320px - phone screen - infiniti */
 
-.header-nav {
-  display: none;
-}
-
-.header-contacts {
-  display: none;
-}
-
 .icon-open-menu {
   stroke: #2e2f42;
 }
@@ -266,6 +269,29 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 24px 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    display: none;
+  }
+}
+
+/* 768px - desktop screen - infiniti */
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 0 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -278,36 +304,47 @@ body {
 
     color: var(--dark-txt-cl);
   }
+}
 
+@media screen and (min-width: 768px) {
   .header-nav {
     margin-right: auto;
   }
+}
 
+@media screen and (min-width: 768px) {
   .header-list {
     display: flex;
     gap: 40px;
   }
+}
 
-  .nav-item,
-  .nav-contacts {
+@media screen and (min-width: 768px) {
+  .nav-item {
     display: block;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 22px;
 
     transition: color var(--transition-delay) var(--transition-tim-fun);
   }
+}
 
+@media screen and (min-width: 768px) {
   .header .nav-contacts {
     color: inherit;
   }
+}
 
+@media screen and (min-width: 768px) {
   .nav-item:hover,
   .nav-item:focus,
   .nav-contacts:hover,
   .nav-contacts:focus {
     color: var(--active-link-txt-cl);
   }
+}
 
+@media screen and (min-width: 768px) {
   .nav-item.current::after {
     content: '';
     position: absolute;
@@ -319,11 +356,27 @@ body {
     background-color: var(--active-link-txt-cl);
     border-radius: 2px;
   }
+}
 
+@media screen and (min-width: 768px) {
   .header-contacts {
-    color: #000;
-  }
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
 
+    letter-spacing: 0.04em;
+
+    color: var(--body-txt-cl);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts .list:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -331,15 +384,31 @@ body {
   }
 }
 
-/* 
+/* 1200px - desktop screen - infiniti */
 
-.header-contacts {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+@media screen and (min-width: 1200px) {
+  .nav-item {
+    padding-bottom: 28px;
+  }
 }
 
- */
+@media screen and (min-width: 1200px) {
+  .nav-contacts {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    transition: color var(--transition-delay) var(--transition-tim-fun);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
 
 /* -------------------------- */
 /* ----header-mobile-menu---- */
@@ -439,6 +508,22 @@ body {
     text-transform: capitalize;
 
     color: var(--dark-txt-cl);
+
+    transition: color var(--transition-delay) var(--transition-tim-fun);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-menu-contacts .link {
+    transition: color var(--transition-delay) var(--transition-tim-fun);
+  }
+}
+@media screen and (max-width: 767px) {
+  .mobile-menu .link:hover,
+  .mobile-menu .link:focus,
+  .header-menu-contacts .link:hover,
+  .header-menu-contacts .link:focus {
+    color: var(--active-link-txt-cl);
   }
 }
 
