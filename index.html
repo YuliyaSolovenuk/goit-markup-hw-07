@@ -27,14 +27,14 @@
 
   <body>
     <!--header----------------------------------->
-    <!-- <header class="header">
+     <header class="header">
       <div class="header-container container">
         <a class="header-link logo link" href="index.html"
           >Web<span class="light-theme-logo">Studio</span></a
         >
 
         <!-- navigation ------------------------------->
-        <!-- <nav class="header-nav">
+        <nav class="header-nav">
           <ul class="header-list">
             <li class="list">
               <a class="nav-item link current" href="index.html">Studio</a>
@@ -46,10 +46,10 @@
               <a class="nav-item link" href="#">Contacts</a>
             </li>
           </ul>
-        </nav> -->
+        </nav>
 
         <!-- Contacts --------------------------------->
-        <!-- <ul class="header-contacts">
+        <ul class="header-contacts">
           <li class="list">
             <a class="nav-contacts link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -60,7 +60,107 @@
               >+11 (000) 111-11-11</a
             >
           </li>
-        </ul> -->
+        </ul>
+
+        <!-- Header-button-open-menu--------------------------------->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-open-menu"
+            width="32"
+            height="22"
+          >
+           <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+        <!-- Header-mobile-menu--------------------------------->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-close-btn js-close-menu">
+            <svg class="icon-close-menu"
+              width="8"
+              height="8"
+            >
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item list"><a class="link" href="">Studio</a></li>
+            <li class="mobile-menu-item list"><a class="link" href="">Portfolio</a></li>
+            <li class="mobile-menu-item list"><a class="link" href="">Contacts</a></li>
+          </ul>
+          
+          <ul class="header-menu-contacts">
+            <li class="mobile-menu-item-tel list">
+              <a class="nav-menu-contacts mobile-menu-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-menu-item-mail list">
+              <a class="nav-menu-contacts mobile-menu-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-socials-list">
+                  <li class="socials-item list">
+                    <a
+                      class="socials-link link"
+                      href="https://instagram.com"
+                      aria-label="Instagram"
+                      target="_blank"
+                      rel="noopener no-referrer"
+                    >
+                      <svg class="socials-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item list">
+                    <a
+                      class="socials-link link"
+                      href="https://twitter.com"
+                      aria-label="Twitter"
+                      target="_blank"
+                      rel="noopener no-referrer"
+                    >
+                      <svg class="socials-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item list">
+                    <a
+                      class="socials-link link"
+                      href="https://facebook.com"
+                      aria-label="Facebook"
+                      target="_blank"
+                      rel="noopener no-referrer"
+                    >
+                      <svg class="socials-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item list">
+                    <a
+                      class="socials-link link"
+                      href="https://linkedin.com"
+                      aria-label="Linkedin"
+                      target="_blank"
+                      rel="noopener no-referrer"
+                    >
+                      <svg class="socials-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+        </div>
+
       </div>
     </header> 
 
@@ -173,7 +273,7 @@
 
       <!--section "Our Team"------------------------>
 
-      <!-- <section class="our-team section">
+       <section class="our-team section"
         <div class="our-team-container container">
           <h2 class="section-title our-team-title">Our Team</h2>
           <ul class="our-team-list card-set">
@@ -443,7 +543,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
 
       <!--section "Customers"------------------------>
 
@@ -716,6 +816,14 @@
       </div>
     </div>
 
+
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
