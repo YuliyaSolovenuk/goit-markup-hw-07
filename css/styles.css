@@ -741,9 +741,10 @@ body {
 /* -------------------------- */
 
 /* 320px - phone screen - infiniti */
-
-.benefits-thumb-icon {
-  display: none;
+@media screen and (max-width: 1199px) {
+  .benefits-thumb-icon {
+    display: none;
+  }
 }
 
 .benefits-subtitle {
